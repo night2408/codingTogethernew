@@ -3,20 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CodeBuddies welcomes you</title>
-    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <title>CodeBuddies</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Welcome to CodeBuddies</h1>
+    <div class="container">
+      <h1>Welcome to <span>CodingTogether</span></h1>
 
-    <textarea
-      name=""
-      id=""
-      cols="30"
-      rows="30"
-      placeholder="type your code buddy"
-    ></textarea>
-    <!-- <script src="./index.js"></script> -->
+      <div class="share">
+        <input type="text" id="roomLink" readonly />
+        <button id="copyBtn">📋 Copy Link</button>
+      </div>
+
+      <p id="typingStatus"></p>
+
+      <textarea
+        id="editor"
+        cols="30"
+        rows="20"
+        placeholder="Type your code here..."
+      ></textarea>
+    </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
-

@@ -1,11 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #0d0d1a;
+  color: #f0f0f0;
+  font-family: 'Orbitron', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #8a2be2;
+}
+
+h1 span {
+  color: #1e90ff;
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+#roomLink {
+  width: 300px;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #222;
+  color: #4fe0ea;
+  font-family: monospace;
+}
+
+#copyBtn {
+  background-color: #4fe0ea;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 10px #4fe0ea;
+  transition: all 0.2s ease-in-out;
+}
+
+#copyBtn:hover {
+  transform: scale(1.05);
+}
+
+#typingStatus {
+  color: #bbbbff;
+  font-style: italic;
+  margin: 10px 0;
+  min-height: 20px;
 }
 
 textarea {
-  font-size: large;
-  font-family: "Courier New", Courier, monospace;
-  width: 98vw;
-  padding: 5px;
+  width: 98%;
+  height: 50vh;
+  font-size: 1rem;
+  background: #111;
+  color: #f8f8f2;
+  border: 2px solid #8a2be2;
+  border-radius: 10px;
+  padding: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  resize: none;
 }
